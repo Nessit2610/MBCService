@@ -35,7 +35,7 @@ public class UserDetails {
 	@Column(name="birthday")
 	private Date birthday;
 	
-	@Column(name="pidnumber")
+	@Column(name="pidnumber")//CCCD
 	private String pidnumber;
 	
 	@Column(name="email")
@@ -43,9 +43,6 @@ public class UserDetails {
 	
 	@Column(name="phonenumber")
 	private String phonenumber;
-	
-	@Column(name="banknumber")
-	private String banknumber;
 	
 	@Column(name="address")
 	private String address;
@@ -64,7 +61,7 @@ public class UserDetails {
 	}
 
 	public UserDetails(int id, String firstname, String lastname, boolean gender, Date birthday, String pidnumber,
-			String email, String phonenumber, String banknumber, String address, Blob avatar, User user) {
+			String email, String phonenumber, String address, Blob avatar, User user) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -74,7 +71,6 @@ public class UserDetails {
 		this.pidnumber = pidnumber;
 		this.email = email;
 		this.phonenumber = phonenumber;
-		this.banknumber = banknumber;
 		this.address = address;
 		this.avatar = avatar;
 		this.user = user;
@@ -142,14 +138,6 @@ public class UserDetails {
 
 	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
-	}
-
-	public String getBanknumber() {
-		return banknumber;
-	}
-
-	public void setBanknumber(String banknumber) {
-		this.banknumber = banknumber;
 	}
 
 	public String getAddress() {
